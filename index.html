@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar Soundwave Festival</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Stellar Soundwave</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#lineup">Lineup</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary ms-lg-3" href="#tickets">Buy Tickets</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-white text-center d-flex align-items-center justify-content-center">
+        <div class="container">
+            <img src="images.jpg" alt="Stellar Soundwave Logo" class="logo mb-4">
+            <h1 class="display-3">Experience the Cosmos of Sound</h1>
+            <p class="lead">Join us for three days of unforgettable music under the stars.</p>
+            <a href="#tickets" class="btn btn-primary btn-lg mt-3">Get Your Tickets Now!</a>
+        </div>
+    </header>
+    
+
+    <section id="lineup" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Artist Lineup</h2>
+            <div class="row g-4">
+                </div>
+        </div>
+    </section>
+
+    <section id="schedule" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Event Schedule</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped text-center">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Time</th>
+                            <th>Cosmic Stage (Main)</th>
+                            <th>Nebula Tent (Electronic)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td colspan="3" class="table-secondary"><strong>Day 1: Friday</strong></td></tr>
+                        <tr><td>6:00 PM - 7:00 PM</td><td>The Orbitons</td><td>DJ Galax</td></tr>
+                        <tr><td>7:30 PM - 8:30 PM</td><td>Aurora Haze</td><td>Binary Beats</td></tr>
+                        <tr><td>9:00 PM - 10:30 PM</td><td>Cosmic Echoes</td><td>Star-Lord (Live)</td></tr>
+                        <tr><td colspan="3" class="table-secondary"><strong>Day 2: Saturday</strong></td></tr>
+                        <tr><td>6:00 PM - 7:00 PM</td><td>Meteor Falls</td><td>System Glitch</td></tr>
+                        <tr><td>7:30 PM - 8:30 PM</td><td>Saturn Rings</td><td>DJ Nova</td></tr>
+                        <tr><td>9:00 PM - 10:30 PM</td><td>The Celestials</td><td>Andromeda Project</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    
+    <section id="tickets" class="py-5 text-center">
+        <div class="container">
+            <h2 class="mb-4">Book Your Tickets</h2>
+            <p class="lead">Don't miss out! Secure your spot at the biggest musical event of the year.</p>
+            <button class="btn btn-primary btn-lg">Buy Now</button>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Stellar Soundwave Festival. All Rights Reserved.</p>
+    </footer>
+
+    <div class="modal fade" id="artistModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="artistName"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="artistImage" src="" class="img-fluid mb-3" alt="Artist Image">
+                    <p id="artistBio"></p>
+                    <p><strong>Genre:</strong> <span id="artistGenre"></span></p>
+                    <p><strong>Performance Time:</strong> <span id="artistTime"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
